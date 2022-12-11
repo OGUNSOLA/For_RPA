@@ -5,7 +5,7 @@ const firstName = document.getElementById("firstName");
 const lastName = document.getElementById("lastName");
 const address = document.getElementById("address");
 const city = document.getElementById("city");
-const province = document.getElementById("province");
+const state = document.getElementById("state");
 const gender = document.getElementById("gender");
 const homePhone = document.getElementById("home");
 const workPhone = document.getElementById("work");
@@ -23,7 +23,7 @@ document.addEventListener("click", (e) => {
   const genderTd = document.createElement("td");
   const addTd = document.createElement("td");
   const cityTd = document.createElement("td");
-  const provinceTd = document.createElement("td");
+  const stateTd = document.createElement("td");
   const hmphoneTd = document.createElement("td");
   const wkphoneTd = document.createElement("td");
   const pEmailTd = document.createElement("td");
@@ -36,7 +36,7 @@ document.addEventListener("click", (e) => {
     genderTd.append(gender.value);
     addTd.append(address.value);
     cityTd.append(city.value);
-    provinceTd.append(province.value);
+    stateTd.append(state.value);
     hmphoneTd.append(homePhone.value);
     wkphoneTd.append(workPhone.value);
     pEmailTd.append(personalEmail.value);
@@ -49,7 +49,7 @@ document.addEventListener("click", (e) => {
       genderTd,
       addTd,
       cityTd,
-      provinceTd,
+      stateTd,
       hmphoneTd,
       wkphoneTd,
       pEmailTd,
