@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rpa.css">
+  <title>RPA DATa</title>
+</head>
+
+<body>
+  <header>
+    <h1>OLUBUKOLA RPA SAMPLE APP</h1>
+  </header>
+  <main>
+    <section class="formArea">
+      <form action="" class="forms" name="theForm">
+
+        <fieldset class="name">
+          <h1>Name</h1>
+          <div><label for="firstName">First Name </label>
+            <input type="text" name="firstName" id="firstName">
+          </div>
+          <div>
+            <label for="lastName">Last Name </label>
+            <input type="text" name="lastName" id="lastName">
+          </div>
+
+        </fieldset>
+        <fieldset class="address">
+          <h1>Address</h1>
+          <div><label for="address">Address </label>
+            <input type="text" name="address" id="address">
+          </div>
+          <div>
+            <label for="city">City </label>
+            <input type="text" name="city" id="city">
+          </div>
+          <div>
+            <label for="state">Province </label>
+            <select name="province" id="province">
+              <Option value="Alberta">Alberta</Option>
+              <Option value="British Columbia">British Columbia</Option>
+              <Option value="Manitoba">Manitoba</Option>
+              <Option value="New Brunswick">New Brunswick</Option>
+              <Option value="Newfoundland and Labrador">Newfoundland and Labrador</Option>
+              <Option value="Northwest Territories">Northwest Territories</Option>
+              <Option value="Nova Scotia">Nova Scotia</Option>
+              <Option value="Nunavut">Nunavut</Option>
+              <Option value="Ontario">Ontario</Option>
+            </select>
+          </div>
+          <div class="genderArea">
+            <legend>Gender</legend>
+            <select name="gender" id="gender">
+              <Option value="male">Male</Option>
+              <Option value="female">Female</Option>
+            </select>
+
+          </div>
+
+        </fieldset>
+        <fieldset class="phone">
+          <h1>Phone</h1>
+          <div>
+            <label for="home">Home </label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="home" id="home"
+              placeholder="Format: 123-456-7890">
+          </div>
+          <div>
+            <label for="mobile">Work </label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="work" id="work"
+              placeholder="Format: 123-456-7890">
+          </div>
+        </fieldset>
+        <fieldset class="email">
+          <h1>Email</h1>
+          <div><label for="personal">personal </label>
+            <input type="email" name="personal" id="personal">
+          </div>
+          <div>
+            <label for="workEmail">work</label>
+            <input type="email" name="workEmail" id="workEmail">
+          </div>
+        </fieldset>
+      </form>
+      <div class="addClearArea">
+        <h3 class="add">Add</h3>
+        <div class="clear">
+          <span>Clear All Rows</span>
+          <img src="images/icons8-delete-80.png" alt="delete icon" class="deleteIcon">
+        </div>
+      </div>
+    </section>
+    <section class="dataArea">
+      <table id="customerData">
+        <tr>
+          <th>SN</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Province</th>
+          <th>Home Phone</th>
+          <th>Work Phone</th>
+          <th>Personal Email</th>
+          <th>Work Email</th>
+          <th>Customer ID</th>
+        </tr>
+
+      </table>
+    </section>
+  </main>
+  <footer></footer>
+
+</body>
+<script src="rpa.js"></script>
+
+</html>
